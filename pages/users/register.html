@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <title>Employee Register</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="../../images/logo.png" alt="Regina S.A." />
+
+        </div>
+      </div>
+    </header>
+    <form action="register.php" method="post">
+      <div class="register_back">
+        <h1>Register User</h1>
+        <a href="../login/login.html">
+          <img src="../../images/back.png" />
+        </a>
+      </div>
+
+      <label for="first_name">Name:</label>
+      <input
+        type="text"
+        id="first_name"
+        autocomplete="off"
+        name="first_name"
+        required
+      />
+      <br />
+
+      <label for="last_name">Last Name:</label>
+      <input
+        type="text"
+        id="last_name"
+        autocomplete="off"
+        name="last_name"
+        required
+      />
+      <br />
+
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" required />
+      <br />
+
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        autocomplete="off"
+        name="username"
+        required
+      />
+      <br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        class="edit-password"
+        id="password"
+        name="password"
+        required
+      />
+      <br />
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input
+        type="password"
+        class="edit-password"
+        id="confirm_password"
+        name="confirm_password"
+        required
+      />
+      <br />
+
+      <input type="submit" value="Register" />
+    </form>
+
+    <footer>
+      &copy;
+      <?php echo date("Y"); ?>
+      Assignment 2 PHP | Regina Fruet | Student Nº 200552682 |
+    </footer>
+  </body>
+</html>
